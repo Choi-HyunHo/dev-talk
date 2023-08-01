@@ -1,5 +1,8 @@
-import { useRouter } from "next/router";
+"use client";
+
+import { useRouter } from "next/navigation";
 import React from "react";
+import Image from "next/image";
 
 interface Props {
     user?: {
@@ -17,9 +20,10 @@ export default function Avatar({ user }: Props) {
 
     return (
         <div className="w-12 h-12 cursor-pointer" onClick={handleAbout}>
-            <img
+            <Image
                 alt="uesr profile"
-                src={user?.image ?? undefined}
+                src={user?.image || undefined}
+                width={100}
                 className="rounded-full"
             />
         </div>
