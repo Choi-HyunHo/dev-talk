@@ -24,6 +24,7 @@ export default function Avatar({ user }: Props) {
                 alt="uesr profile"
                 src={user?.image || undefined}
                 width={100}
+                height={100}
                 className="rounded-full"
             />
         </div>
