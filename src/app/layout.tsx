@@ -1,8 +1,8 @@
-import Header from "@/components/ui/Header";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import AuthContext from "@/context/AuthContext";
+import { MultiLevelSidebar } from "@/components/ui/Sidebar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,8 +20,12 @@ export default function RootLayout({
         <html lang="en">
             <body className={inter.className}>
                 <AuthContext>
-                    <Header />
-                    <main>{children}</main>
+                    <div className="flex">
+                        <MultiLevelSidebar />
+                        <main className="w-[calc(100vw-20rem)]">
+                            {children}
+                        </main>
+                    </div>
                 </AuthContext>
             </body>
         </html>
