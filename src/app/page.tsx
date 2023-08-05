@@ -1,8 +1,3 @@
 export default function Home() {
-    return (
-        <main className="flex min-h-screen flex-col items-center justify-between p-24">
-            {" "}
-            1
-        </main>
-    );
+    return <div>안녕하세요 DEV TALK 입니다</div>;
 }
