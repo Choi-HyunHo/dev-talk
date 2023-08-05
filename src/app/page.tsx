@@ -1,9 +1,3 @@
-import Header from "@/components/ui/Header";
-
 export default function Home() {
-    return (
-        <>
-            <Header />
-        </>
-    );
+    return <div>안녕하세요 DEV TALK 입니다</div>;
 }
