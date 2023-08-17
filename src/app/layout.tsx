@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import AuthContext from "@/context/AuthContext";
 import { MultiLevelSidebar } from "@/components/ui/Sidebar";
+import { StickyNavbar } from "@/components/ui/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,9 +23,12 @@ export default function RootLayout({
                 <AuthContext>
                     <div className="flex">
                         <MultiLevelSidebar />
-                        <main className="w-[calc(100vw-20rem)] bg-slate-100">
-                            {children}
-                        </main>
+                        <div className="flex flex-col">
+                            <StickyNavbar />
+                            <main className="w-[calc(100vw-20rem py-2 px-4 lg:px-8 lg:py-4">
+                                {children}
+                            </main>
+                        </div>
                     </div>
                 </AuthContext>
             </body>
