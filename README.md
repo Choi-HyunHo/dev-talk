@@ -18,8 +18,6 @@
 
 ## 📝 Git-flow
 
-branch 전략 입니다.
-
 -   main(master) : 기준이 되는 브랜치로 제품을 배포하는 브랜치
 -   develop : 개발 브랜치로 개발자들이 이 브랜치를 기준으로 각자 작업한 기능들을 Merge
 -   feature : 단위 기능을 개발하는 브랜치로 기능 개발이 완료되면 develop 브랜치에 Merge
