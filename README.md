@@ -1,7 +1,5 @@
 ## 👉 Dev-Talk
 
-<br/>
-
 ## 🛠️ Stack
 
 <div>
